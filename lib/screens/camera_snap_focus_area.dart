@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+//Here is a comment
 import 'package:flutter/services.dart' show HapticFeedback;
 import 'package:snap_focus_area/screens/display_captured_image.dart';
 import 'package:snap_focus_area/utils/crop_and_save_image.dart';
