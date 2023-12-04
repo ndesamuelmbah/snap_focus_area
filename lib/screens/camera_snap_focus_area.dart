@@ -186,19 +186,19 @@ class _CameraSnapFocusAreaState extends State<CameraSnapFocusArea> {
           builder: (context, constraints) {
             cameraSize = constraints.biggest;
             pixelRatio = cameraSize.width / controller.value.previewSize!.width;
-            // print('Original pixelRatio $pixelRatio');
+            print('Original pixelRatio $pixelRatio');
             previewSize = controller.value.previewSize!;
             if (cameraSize.aspectRatio < 1 && previewSize.aspectRatio > 1) {
               previewSize = Size(previewSize.height, previewSize.width);
             }
 
             pixelRatio = cameraSize.width / previewSize.width;
-            // print('Aspect Ratio: ${1 / controller.value.aspectRatio}');
-            // print(
-            //     'cameraSize: $cameraSize, Aspect Ratio: ${cameraSize.aspectRatio}');
-            // print(
-            //     'previewSize: $previewSize, Aspect Ratio: ${previewSize.aspectRatio}');
-            // print('pixelRatio $pixelRatio');
+            print('Aspect Ratio: ${1 / controller.value.aspectRatio}');
+            print(
+                'cameraSize: $cameraSize, Aspect Ratio: ${cameraSize.aspectRatio}');
+            print(
+                'previewSize: $previewSize, Aspect Ratio: ${previewSize.aspectRatio}');
+            print('pixelRatio $pixelRatio');
             // print(
             //     'screenSize: $screenSize, Aspect Ratio: ${screenSize.aspectRatio}');
             return OverlayShape(widget.cardOverlay, downloadObjectKey,

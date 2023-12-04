@@ -45,5 +45,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Need Camera to Demonstrate Snapping Overlay Area</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need microphone to record sound while capturing video.</string>
 </dict>
 </plist>

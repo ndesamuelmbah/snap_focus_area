@@ -66,6 +66,8 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/images/launcher_icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
+  background_color: "#ffffff"
+  theme_color: "#ffffff"
   web:
     generate: true
     image_path: "assets/images/launcher_icon.png"
@@ -75,9 +77,13 @@ flutter_launcher_icons:
     generate: true
     image_path: "assets/images/launcher_icon.png"
     icon_size: 48 # min:48, max:256, default: 48
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
   macos:
     generate: true
     image_path: "assets/images/launcher_icon.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
 
 # The following section is specific to Flutter packages.
 flutter:

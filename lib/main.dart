@@ -66,20 +66,22 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {});
     } else {
       allCameras = await availableCameras();
-      print(allCameras);
-      await showDialogForRequestingCamera();
+      if (allCameras.isEmpty) {
+        await showDialogForRequestingCamera();
+      }
     }
   }
 
   Future showDialogForRequestingCamera() async {
     await showDialog<String>(
       context: context,
+      barrierDismissible: true,
       builder: (BuildContext context) => AlertDialog(
         insetPadding: const EdgeInsets.symmetric(horizontal: 0),
         title: Container(
           width: 250,
           height: 50,
-          padding: EdgeInsets.all(5),
+          padding: const EdgeInsets.all(5),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: Colors.indigo.shade200,
